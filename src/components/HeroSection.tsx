@@ -46,6 +46,16 @@ const HeroSection = () => {
               >
                 Explore more
               </Button>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  Connect me
+                </Button>
+              </a>
               <div className="flex space-x-3">
                 <a
                   href="https://linkedin.com"

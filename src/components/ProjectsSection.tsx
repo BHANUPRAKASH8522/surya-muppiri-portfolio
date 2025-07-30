@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       description: "Comprehensive security assessment of vulnerable web applications using various penetration testing tools and techniques.",
       technologies: ["XAMPP", "OWASP-ZAP", "Burp Suite", "MySQL", "Kali Linux", "DVWA"],
       image: "https://i.imgur.com/tgfpFAW.jpeg",
-      link: "#"
+      link: "https://github.com/SURYAMUPPIRI04/DVWA-Web-Security-Project"
     },
     {
       title: "Cybersecurity Case Studies &",
@@ -17,7 +17,7 @@ const ProjectsSection = () => {
       description: "Advanced cybersecurity research project focusing on threat analysis, vulnerability assessment, and security frameworks implementation.",
       technologies: ["IBM X-Force", "Google Dorking", "Nmap", "OpenVAS", "Kali Linux", "Linux CLI"],
       image: "https://i.imgur.com/Cwo36zW.jpeg",
-      link: "#"
+      link: "https://github.com/SURYAMUPPIRI04/Cybersecurity-Case-Studies-and-Capstone-Project"
     }
   ];
 
@@ -67,10 +67,17 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <Button className="btn-cyber group w-full">
-                  View Project
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full"
+                >
+                  <Button className="btn-cyber group w-full">
+                    View Project
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </a>
               </div>
             </div>
           ))}
