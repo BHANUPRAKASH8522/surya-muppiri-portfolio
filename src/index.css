@@ -2,41 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Cybersecurity Portfolio Design System - Dark theme with cyber green accents */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
+    /* Main background and surfaces */
+    --background: 220 26% 6%;
+    --foreground: 210 40% 98%;
+    --card: 220 26% 8%;
+    --card-foreground: 210 40% 95%;
+    
+    /* Cyber green primary colors */
+    --primary: 142 76% 36%;
+    --primary-foreground: 220 26% 6%;
+    --primary-glow: 142 86% 50%;
+    
+    /* Secondary cyber colors */
+    --secondary: 196 100% 45%;
+    --secondary-foreground: 210 40% 98%;
+    
+    /* Muted colors for subtle elements */
+    --muted: 220 26% 12%;
+    --muted-foreground: 215 20% 65%;
+    
+    /* Accent colors */
+    --accent: 142 76% 36%;
+    --accent-foreground: 220 26% 6%;
+    
+    /* Status colors */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    
+    /* Border and input colors */
+    --border: 220 26% 18%;
+    --input: 220 26% 15%;
+    --ring: 142 76% 36%;
+    
+    /* Design tokens */
+    --radius: 0.75rem;
+    
+    /* Custom gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--background)), hsl(220 26% 4%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(220 26% 10%));
+    
+    /* Shadows */
+    --shadow-cyber: 0 0 30px hsl(var(--primary-glow) / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(220 26% 2% / 0.5);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +117,109 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
+    background: var(--gradient-dark);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Cyber button variants */
+  .btn-cyber {
+    @apply relative overflow-hidden rounded-lg px-6 py-3 font-semibold transition-all duration-500;
+    background: var(--gradient-cyber);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-cyber:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: var(--shadow-cyber);
+  }
+
+  .btn-cyber::before {
+    content: '';
+    @apply absolute inset-0 -z-10 rounded-lg;
+    background: var(--gradient-cyber);
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn-cyber:hover::before {
+    opacity: 0.7;
+  }
+
+  /* Cyber card styling */
+  .cyber-card {
+    @apply relative rounded-xl p-6 transition-all duration-500;
+    background: var(--gradient-card);
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-card);
+  }
+
+  .cyber-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-cyber);
+    border-color: hsl(var(--primary) / 0.5);
+  }
+
+  /* Glow text effect */
+  .cyber-glow {
+    background: var(--gradient-cyber);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px hsl(var(--primary-glow) / 0.5);
+  }
+
+  /* Animated underline */
+  .cyber-link {
+    @apply relative inline-block;
+  }
+
+  .cyber-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 h-0.5 w-0 transition-all duration-300;
+    background: var(--gradient-cyber);
+  }
+
+  .cyber-link:hover::after {
+    @apply w-full;
+  }
+
+  /* Floating animation */
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  /* Pulse glow animation */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse-glow {
+    from {
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.4);
+    }
+    to {
+      box-shadow: 0 0 40px hsl(var(--primary-glow) / 0.8);
+    }
+  }
+
+  /* Matrix rain effect for background */
+  .matrix-bg::before {
+    content: '';
+    @apply absolute inset-0 opacity-20;
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(var(--primary-glow) / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsl(var(--secondary) / 0.1) 0%, transparent 50%);
   }
 }
