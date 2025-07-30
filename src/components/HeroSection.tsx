@@ -1,7 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const HeroSection = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -11,7 +20,13 @@ const HeroSection = () => {
     <section className="min-h-screen flex items-center justify-center relative matrix-bg">
       <div className="container mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <div 
+            className="space-y-8 animate-fade-in"
+            style={{ 
+              transform: `translateY(${scrollY * 0.1}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold">
                 I'm{" "}
@@ -60,14 +75,20 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="relative">
+          <div 
+            className="relative animate-fade-in"
+            style={{ 
+              transform: `translateY(${scrollY * -0.05}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
             <div className="relative float-animation">
               <img
                 src="https://i.imgur.com/kpmO0Yj.jpeg"
                 alt="Lakshman Surya Kumar Muppiri"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-cyber pulse-glow"
+                className="w-full max-w-md mx-auto rounded-2xl shadow-cyber hover:shadow-lg transition-shadow duration-300"
               />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-cyber opacity-20 blur-xl"></div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-cyber opacity-10 blur-lg hover:opacity-15 transition-opacity duration-300"></div>
             </div>
           </div>
         </div>
