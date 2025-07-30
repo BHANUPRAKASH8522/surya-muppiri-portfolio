@@ -15,11 +15,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold">
                 I'm{" "}
-                <span className="cyber-glow">LAKSHMAN SURYA</span>
-                <br />
-                <span className="text-3xl lg:text-4xl text-muted-foreground">
-                  KUMAR MUPPIRI
-                </span>
+                <span className="cyber-glow">LAKSHMAN SURYA KUMAR MUPPIRI</span>
               </h1>
               <p className="text-xl text-muted-foreground">
                 Master of Science in Cybersecurity |
@@ -38,18 +34,24 @@ const HeroSection = () => {
               <div className="flex space-x-3">
                 <a
                   href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
                   href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110"
                 >
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:muppiri.lsk2002@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110"
                 >
                   <Mail className="w-5 h-5" />

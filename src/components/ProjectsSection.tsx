@@ -8,7 +8,7 @@ const ProjectsSection = () => {
       subtitle: "(DVWA Project)",
       description: "Comprehensive security assessment of vulnerable web applications using various penetration testing tools and techniques.",
       technologies: ["XAMPP", "OWASP-ZAP", "Burp Suite", "MySQL", "Kali Linux", "DVWA"],
-      image: "/lovable-uploads/ae7ba3f9-b5dd-444f-acd6-a10e300fd303.png",
+      image: "https://i.imgur.com/tgfpFAW.jpeg",
       link: "#"
     },
     {
@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       subtitle: "Captstone Project",
       description: "Advanced cybersecurity research project focusing on threat analysis, vulnerability assessment, and security frameworks implementation.",
       technologies: ["IBM X-Force", "Google Dorking", "Nmap", "OpenVAS", "Kali Linux", "Linux CLI"],
-      image: "/lovable-uploads/ae7ba3f9-b5dd-444f-acd6-a10e300fd303.png",
+      image: "https://i.imgur.com/Cwo36zW.jpeg",
       link: "#"
     }
   ];

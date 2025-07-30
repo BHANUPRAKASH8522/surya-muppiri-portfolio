@@ -15,7 +15,7 @@ const ContactSection = () => {
           <div className="cyber-card text-center">
             <div className="grid md:grid-cols-3 gap-8">
               <a
-                href="tel:+16303640890"
+                href="tel:+916303640890"
                 className="group flex flex-col items-center space-y-4 p-6 rounded-lg hover:bg-primary/10 transition-all duration-300"
               >
                 <div className="p-4 rounded-full bg-gradient-cyber group-hover:scale-110 transition-transform">
@@ -23,12 +23,14 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold cyber-glow mb-2">Phone</h3>
-                  <p className="text-muted-foreground">+91 630-364-0890</p>
+                  <p className="text-muted-foreground">+91 6303640890</p>
                 </div>
               </a>
 
               <a
                 href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex flex-col items-center space-y-4 p-6 rounded-lg hover:bg-primary/10 transition-all duration-300"
               >
                 <div className="p-4 rounded-full bg-gradient-cyber group-hover:scale-110 transition-transform">
