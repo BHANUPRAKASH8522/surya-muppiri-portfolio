@@ -37,7 +37,7 @@ const Footer = () => {
 
           <div className="text-center">
             <p className="text-sm text-muted-foreground">
-              Copyright © 2025. All Rights Reserved
+              Copyright © 2025 Lakshman Surya Kumar Muppiri. All rights reserved
             </p>
           </div>
         </div>
