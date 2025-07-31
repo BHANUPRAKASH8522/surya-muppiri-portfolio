@@ -38,11 +38,17 @@ const AboutSection = () => {
                 </p>
               </div>
 
-              <Button className="btn-cyber group">
-                <Download className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                Download CV
-                <span className="ml-2 cyber-glow">→ Lakshman Surya</span>
-              </Button>
+              <a
+                href="https://androiddevhub.com/tools/link-converter/docx-to-link.php?id=25"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="btn-cyber group">
+                  <Download className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
+                  Download CV
+                  <span className="ml-2 cyber-glow">→ Lakshman Surya</span>
+                </Button>
+              </a>
             </div>
           </div>
         </div>
