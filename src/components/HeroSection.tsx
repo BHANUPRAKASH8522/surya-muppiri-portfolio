@@ -46,30 +46,20 @@ const HeroSection = () => {
               >
                 Explore more
               </Button>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block"
-              >
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Connect me
-                </Button>
-              </a>
               <div className="flex space-x-3">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/lakshman-surya-kumar-muppiri/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110"
+                  className="p-3 rounded-full bg-card hover:bg-primary/10 transition-all duration-200 hover:scale-105"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/SURYAMUPPIRI04"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110"
+                  className="p-3 rounded-full bg-card hover:bg-primary/10 transition-all duration-200 hover:scale-105"
                 >
                   <Github className="w-5 h-5" />
                 </a>
@@ -77,7 +67,7 @@ const HeroSection = () => {
                   href="mailto:muppiri.lsk2002@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110"
+                  className="p-3 rounded-full bg-card hover:bg-primary/10 transition-all duration-200 hover:scale-105"
                 >
                   <Mail className="w-5 h-5" />
                 </a>
@@ -98,7 +88,7 @@ const HeroSection = () => {
                 alt="Lakshman Surya Kumar Muppiri"
                 className="w-full max-w-md mx-auto rounded-2xl shadow-cyber hover:shadow-lg transition-shadow duration-300"
               />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-cyber opacity-10 blur-lg hover:opacity-15 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-cyber opacity-5 blur-md hover:opacity-8 transition-opacity duration-200"></div>
             </div>
           </div>
         </div>
