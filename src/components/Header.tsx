@@ -1,14 +1,9 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/AppSidebar";
-import { useIsMobile } from "@/hooks/use-mobile";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,34 +19,6 @@ const Header = () => {
     element?.scrollIntoView({ behavior: "smooth" });
     setIsOpen(false);
   };
-
-  if (isMobile) {
-    return (
-      <SidebarProvider>
-        <div className="w-full">
-          <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-              isScrolled
-                ? "bg-background/80 backdrop-blur-lg shadow-cyber"
-                : "bg-transparent"
-            }`}
-          >
-            <nav className="container mx-auto px-6 py-4">
-              <div className="flex items-center justify-between">
-                <div className="text-xl font-bold cyber-glow">
-                  SURYA MUPPIRI
-                </div>
-                <SidebarTrigger className="p-2 hover:bg-primary/10 rounded-lg transition-colors">
-                  <Menu className="w-6 h-6" />
-                </SidebarTrigger>
-              </div>
-            </nav>
-          </header>
-          <AppSidebar />
-        </div>
-      </SidebarProvider>
-    );
-  }
 
   return (
     <header
