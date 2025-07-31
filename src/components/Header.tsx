@@ -21,13 +21,14 @@ const Header = () => {
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-lg shadow-cyber"
-          : "bg-transparent"
-      }`}
-    >
+    <div className="relative">
+      <header
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
+          isScrolled
+            ? "bg-background/80 backdrop-blur-lg shadow-cyber"
+            : "bg-transparent"
+        }`}
+      >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold cyber-glow">
@@ -76,43 +77,46 @@ const Header = () => {
         </div>
 
         {isOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
-            <div className="flex flex-col space-y-4">
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-left cyber-link text-foreground hover:text-primary transition-colors"
-              >
-                About
-              </button>
-              <button
-                onClick={() => scrollToSection("skills")}
-                className="text-left cyber-link text-foreground hover:text-primary transition-colors"
-              >
-                Skills
-              </button>
-              <button
-                onClick={() => scrollToSection("projects")}
-                className="text-left cyber-link text-foreground hover:text-primary transition-colors"
-              >
-                Projects
-              </button>
-              <button
-                onClick={() => scrollToSection("youtube")}
-                className="text-left cyber-link text-foreground hover:text-primary transition-colors"
-              >
-                Youtube
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="text-left cyber-link text-foreground hover:text-primary transition-colors"
-              >
-                Contact
-              </button>
-            </div>
-          </nav>
+          <div className="absolute top-full left-0 right-0 z-50 bg-background/95 backdrop-blur-md border border-border rounded-b-lg shadow-lg">
+            <nav className="container mx-auto px-6 py-4">
+              <div className="flex flex-col space-y-4">
+                <button
+                  onClick={() => scrollToSection("about")}
+                  className="text-left p-2 rounded-lg cyber-link text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                >
+                  About
+                </button>
+                <button
+                  onClick={() => scrollToSection("skills")}
+                  className="text-left p-2 rounded-lg cyber-link text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                >
+                  Skills
+                </button>
+                <button
+                  onClick={() => scrollToSection("projects")}
+                  className="text-left p-2 rounded-lg cyber-link text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                >
+                  Projects
+                </button>
+                <button
+                  onClick={() => scrollToSection("youtube")}
+                  className="text-left p-2 rounded-lg cyber-link text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                >
+                  Youtube
+                </button>
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="text-left p-2 rounded-lg cyber-link text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                >
+                  Contact
+                </button>
+              </div>
+            </nav>
+          </div>
         )}
       </nav>
-    </header>
+      </header>
+    </div>
   );
 };
 
