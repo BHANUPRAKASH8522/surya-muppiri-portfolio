@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+# 🌐 Personal Portfolio - Lakshman Surya Kumar Muppiri
 
-## Project info
+This is a **responsive personal portfolio website** developed for **Lakshman Surya Kumar Muppiri**, a Master’s student in Cybersecurity at Lewis University.
 
-**URL**: https://lovable.dev/projects/620f7fb4-c447-4b83-8e12-bf6d02ac92ae
+The project started as a UI/UX design in **Figma**, then converted into a responsive web template using modern web technologies and finalized using **Loveable.dev**.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 👤 Client
 
-**Use Lovable**
+**Name:** Lakshman Surya Kumar Muppiri  
+**Role:** Cybersecurity Graduate Student  
+**University:** Lewis University, Romeoville, IL  
+**Objective:** To showcase skills, projects, and contact info through a professional portfolio website
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/620f7fb4-c447-4b83-8e12-bf6d02ac92ae) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎨 UI/UX Design Phase
 
-**Use your preferred IDE**
+- **Tool Used:** [Figma](https://figma.com)  
+- **Designed By:** Bhanu Prakash Chilakala  
+- **Design Goals:**
+  - Clean, modern layout
+  - Easy navigation
+  - Visual presentation of skills and tools
+  - Responsive and mobile-friendly
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧑‍💻 Development Phase
 
-Follow these steps:
+- **Coded By:** Bhanu Prakash Chilakala  
+- **Conversion Tools:** HTML, CSS, JS or Loveable.dev visual builder  
+- **Workflow:**
+  1. UI Design in Figma
+  2. Export assets & specs
+  3. Code the layout (or implement using Loveable.dev)
+  4. Optimize for responsiveness
+  5. Add interactions (scrolling, click redirects)
+  6. Final deployment or export
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🎯 Key Features
 
-# Step 3: Install the necessary dependencies.
-npm i
+- ✅ Professional design with a personal touch
+- ✅ Interactive "About Me" section with resume download
+- ✅ Visual display of technical and cybersecurity skills
+- ✅ Projects section with real tools used
+- ✅ Direct contact links (Phone, Email, LinkedIn, GitHub)
+- ✅ Mobile-first and fully responsive
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🖼️ Assets Used
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Project Images:**
+  - [Project 1](https://i.imgur.com/tgfpFAW.jpeg)
+  - [Project 2](https://i.imgur.com/Cwo36zW.jpeg)
 
-**Use GitHub Codespaces**
+- **Skill Icons:**
+  - Python: https://i.imgur.com/ACcjfKu.png  
+  - Bash: https://i.imgur.com/oqAwzvi.png  
+  - Kali Linux: https://i.imgur.com/TGVgeI0.jpeg  
+  - MySQL: https://i.imgur.com/Vwyo0mG.png  
+  - GitHub: https://i.imgur.com/ivdWkwP.png  
+  - Wireshark: https://i.imgur.com/md1uMv9.png  
+  - Nmap: https://i.imgur.com/V4zkRAP.jpeg  
+  - OpenSSL: https://i.imgur.com/34z5pEQ.jpeg  
+  - IBM X-Force: https://i.imgur.com/5hW9vkg.png  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🔗 Contact Information
 
-This project is built with:
+- 📞 Phone: +91 630-364-0890  
+- 📧 Email: muppiri.lsk2002@gmail.com  
+- 🔗 LinkedIn: [Lakshman Surya Kumar Muppiri](https://www.linkedin.com/in/lakshman-surya-kumar-muppiri-665832222/)  
+- 💻 GitHub: [SURYAMUPPIRI04](https://github.com/SURYAMUPPIRI04)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🧾 License
 
-Simply open [Lovable](https://lovable.dev/projects/620f7fb4-c447-4b83-8e12-bf6d02ac92ae) and click on Share -> Publish.
+This project was developed **exclusively for Surya** as a personal portfolio.  
+All content (design + code) is custom-built. Please do not copy or redistribute without permission.
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+> 💚 Designed in Figma & Developed by Bhanu Prakash Chilakala for Surya
